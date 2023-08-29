@@ -20,7 +20,7 @@ bowlerdata['balls_per_over'] = 6
 bowlerdata['overs'] = bowlerdata['total_balls'] // bowlerdata['balls_per_over']
 bowlerdata['balls_in_last_over'] = bowlerdata['total_balls'] % bowlerdata['balls_per_over']
 bowlerdata['final_overs'] = bowlerdata['overs'] + bowlerdata['balls_in_last_over'] / 10
-bowlerdata[bowlerdata['bowler']=='JJ Bumrah']
+#bowlerdata[bowlerdata['bowler']=='JJ Bumrah']
 
 
 bowlerdata['average']=bowlerdata['bowler_conceded_runs']/bowlerdata['bowler_out']
@@ -29,7 +29,7 @@ bowlerdata['economy']=(bowlerdata['bowler_conceded_runs']/bowlerdata['total_ball
 bowlerdata['strike_rate']=bowlerdata['total_balls']/bowlerdata['bowler_out']
 bowlerdata['dot_percent']=(bowlerdata['bowlerdotball']/bowlerdata['total_balls'])*100
 bowlerdata['bpb']=bowlerdata['total_balls']/bowlerdata['boundary']
-bowlerdata[bowlerdata['bowler']=='JJ Bumrah']
+#bowlerdata[bowlerdata['bowler']=='JJ Bumrah']
 
 
 # Specify the desired column order
@@ -40,7 +40,7 @@ bowlerdata = bowlerdata[desired_columns]
 
 #sample
 #batterdata3[batterdata3['batsman']=='SPD Smith']
-st.write(bowlerdata[bowlerdata['bowler']=='JJ Bumrah'])
+st.write(bowlerdata)
 #bowlerdata[bowlerdata['bowler_out']>100]
 #bowlerdata
 

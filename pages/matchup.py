@@ -11,9 +11,11 @@ headtohead=newdata.groupby(['striker','bowler']).agg({'runs_off_bat': 'sum', 'ma
 #st.write(headtohead(x)
 
 with st.container():
-st.title("WELCOME TO matchups")
+  st.title("WELCOME TO matchups")
 #headtohead
-st.sidebar.title("Navigation")
-x = st.sidebar.selectbox("which city data do u want", headtohead['striker'].unique())
-city_data = headtohead[headtohead['striker'] == x]
-st.write(city_data)
+  st.sidebar.title("Navigation")
+  x = st.sidebar.selectbox("which city data do u want", headtohead['striker'].unique())
+  city_data = headtohead[headtohead['striker'] == x]
+  st.write(city_data)
+  
+

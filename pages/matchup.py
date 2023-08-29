@@ -10,7 +10,7 @@ import pandas
 #headtohead[headtohead['striker']=='V Kohli']
 #st.write(headtohead(x)
 
-with st.container():
+#with st.container():
     st.title("WELCOME TO matchups")
     #st.sidebar.title("Navigation")
     #x = st.sidebar.selectbox("which city data do u want", headtohead['striker'].unique())

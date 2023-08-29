@@ -11,7 +11,7 @@ import pandas
 #st.write(headtohead(x)
 
 #with st.container():
-    st.title("WELCOME TO matchups")
+st.title("WELCOME TO matchups")
     #st.sidebar.title("Navigation")
     #x = st.sidebar.selectbox("which city data do u want", headtohead['striker'].unique())
     #city_data = headtohead[headtohead['striker'] == x]

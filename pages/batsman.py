@@ -12,14 +12,14 @@ newdata=pd.read_csv('teststream.csv')
 strikerdata=newdata.groupby(['striker','match_id'])['start_date'].count().reset_index()
 new_column_name = 'strikercount'
 strikerdata.rename(columns={'start_date': new_column_name}, inplace=True)
-strikerdata
+#strikerdata
 
 #nonstrikerinningscount
 nonstrikerdata=newdata.groupby(['non_striker','match_id'])['start_date'].count().reset_index()
-nonstrikerdata
+#nonstrikerdata
 new_column_name = 'nonstrikercount'
 nonstrikerdata.rename(columns={'start_date': new_column_name}, inplace=True)
-nonstrikerdata
+#nonstrikerdata
 
 #merge the data
 mergedstrikerdata=nonstrikerdata.merge(strikerdata,how='left',left_on=['non_striker','match_id'],right_on=['striker','match_id'])

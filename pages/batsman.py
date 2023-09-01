@@ -31,7 +31,6 @@ mergedstrikerdata3.rename(columns={'match_id': new_column_name}, inplace=True)
 
 #combine data to get batting chart
 batterdata=newdata.groupby('striker').agg({'runs_off_bat': 'sum', 'match_id': 'nunique', 'ball_count': 'sum', 'striker_out': 'sum','dotball': 'sum','boundary': 'sum'}).reset_index()
-batterdata[batterdata['striker']=='V Kohli']
 nonstrikeroutdata=newdata.groupby('non_striker')['non_striker_out'].sum()
 batterdata2=batterdata.merge(nonstrikeroutdata,how='outer',left_on='striker',right_on='non_striker')
 batterdata3=batterdata2.merge(mergedstrikerdata3,how='outer',left_on='striker',right_on='non_striker')

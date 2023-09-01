@@ -5,7 +5,7 @@ import pandas as pd
 st.title("Filtered DataFrame")
 
 # Sample DataFrame
-df=pd.read_csv('/pages/consolidatedresults.csv')
+df=pd.read_csv('consolidatedresults.csv')
 
 # Define the dropdowns for column 1 and column 2
 selected_column_1 = st.selectbox("Select column 1:", df["team"].unique())

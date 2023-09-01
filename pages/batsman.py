@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 st.set_page_config(
     page_title="bastman App",
 )
@@ -63,7 +64,7 @@ batterdata3 = batterdata3[desired_columns]
 
 #sample
 #batterdata3[batterdata3['batsman']=='SPD Smith']
-batterdata3[batterdata3['runs_off_bat']>50]
+st.write(batterdata3[batterdata3['runs_off_bat']>50])
 
 #batterdata3
 

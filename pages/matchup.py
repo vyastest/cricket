@@ -14,7 +14,7 @@ with st.container():
   st.title("WELCOME TO matchups")
 #headtohead
   st.sidebar.title("Navigation")
-  x = st.sidebar.selectbox("which city data do u want", headtohead['striker'].unique())
+  x = st.sidebar.selectbox("which player data do u want", headtohead['striker'].unique())
   city_data = headtohead[headtohead['striker'] == x]
   st.write(city_data)
   
